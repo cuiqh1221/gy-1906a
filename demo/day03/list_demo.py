@@ -1,0 +1,51 @@
+#增append,expend(you will notice that we also append current time)
+a=[1,2,3,45]
+a.append(1)
+print(a)
+a.append('本初子午')
+print(a)
+b=['omaigaga',18325]
+print(a+b)
+print(a)
+print(b)#a的内容没变
+a.extend(b)
+print(a)#a的内容变了
+#删除pop,默认最后一位
+a.pop()
+a.pop(0)
+print(a)
+c=[55,'w']
+c.pop(0)
+print(c)
+c.pop()
+print(c)
+c.append(222)
+print(c)
+c.clear()
+print(c)
+#改
+c.append(1)
+c.append(2)
+print(c)
+c[0],c[1]=9,4
+print(c)
+#查
+d=[8,9,4,20,88]
+print(0)
+print(1)
+#遍历
+for i in d:
+    print(i)
+#截取
+#截取部分数据
+print(d[1:3])
+print(d[::-1])
+print(d[::2])
+#求列表长度
+print(len(d))
+
+#成员判断
+if(4 in d):
+    print('4在列表中')
+else:
+    print('4不在列表中')
